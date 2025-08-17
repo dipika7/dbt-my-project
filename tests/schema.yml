@@ -1,0 +1,9 @@
+sources:
+  - name: test
+    database: ANALYTICS_DB
+    schema: DBT_SCHEMA
+    tables:
+      - name: MAPPING
+        columns:
+          - name: ID
+            tests: [not_null, unique]
